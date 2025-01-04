@@ -1,23 +1,32 @@
 import React from 'react';
+import { Parallax, Background } from 'react-parallax';
 
 const Cover = ({image, title}) => {
     return (
+        
+        <Parallax
+        blur={{ min: -15, max: 15 }}
+        bgImage={image}
+        bgImageAlt="the dog"
+        strength={-200}
+    >
         <div
-        className="hero h-[500px]"
-        style={{
-            backgroundImage: `url(${image})`,
-        }}>
+        className="hero h-[230px] md:h-[500px]"
+        >
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-neutral-content text-center">
             <div className="max-w-md">
-            <h1 className="mb-5 text-5xl uppercase font-bold">{title}</h1>
-            <p className="mb-5">
+            <h1 className="mb-5 text-2xl md:text-5xl uppercase font-bold">{title}</h1>
+            <p className="mb-5 text-sm md:text-base">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                 quasi. In deleniti eaque aut repudiandae et a id nisi.
             </p>
             </div>
         </div>
         </div>
+    </Parallax>
+
+        
     );
 };
 
