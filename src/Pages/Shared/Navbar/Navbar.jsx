@@ -3,7 +3,8 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar fixed z-50 opacity-60 bg-black text-white">
+            <div className=' fixed z-50 opacity-60 w-full bg-black'>
+            <div className="navbar  text-white max-w-screen-xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,6 +56,7 @@ const Navbar = () => {
                     <a className="btn">Button</a>
                 </div>
                 </div>
+        </div>
         </div>
     );
 };

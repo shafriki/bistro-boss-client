@@ -49,16 +49,17 @@ const fadeAnimationHandler = (props, state) => {
 
 const Banner = () => {
     return (
-        <Carousel
+        <Carousel 
             autoPlay
             autoFocus
-            centerMode
             emulateTouch
             animationHandler={fadeAnimationHandler}
-            interval={3000} // Slide every 2 seconds
-            infiniteLoop // Ensure the carousel loops continuously
-            stopOnHover={false} // Prevent pausing on hover
-        >
+            interval={4000}
+            infiniteLoop 
+            stopOnHover={false}
+            showThumbs={true}
+             >
+            
             <div>
                 <img src={img1} alt="Slide 1" />
             </div>
