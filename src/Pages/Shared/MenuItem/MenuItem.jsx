@@ -7,10 +7,10 @@ const MenuItem = ({item}) => {
         <div className='flex space-x-4'>
             <img style={{borderRadius: '0 200px 200px 200px'}} className='w-[104px]' src={image} alt="image" />
             <div>
-                <h3 className='uppercase'>{name}------------</h3>
-                <p>{recipe}</p>
+                <h3 className='uppercase text-sm md:text-base'>{name}---------</h3>
+                <p className='text-xs md:text-sm'>{recipe}</p>
             </div>
-            <p>${price}</p>
+            <p className='text-amber-500'>${price}</p>
         </div>
     );
 };

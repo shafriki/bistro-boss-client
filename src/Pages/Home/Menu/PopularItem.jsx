@@ -14,7 +14,7 @@ const PopularItem = () => {
         })
     }, [])
     return (
-        <div className='max-w-screen-lg mx-auto mb-10'>
+        <div className='max-w-screen-lg mx-3 md:mx-auto mb-10'>
             <SectionTitle heading={'Popular Menu'} subHeading={'Check It Out'}>
             </SectionTitle>
             <div  className='grid md:grid-cols-2 gap-4'>
