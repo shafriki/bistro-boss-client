@@ -5,7 +5,7 @@ import featuredImg from '../../../assets/home/featured.jpg';
 const Featured = () => {
     return (
         <div 
-            className="my-10 py-10 relative bg-cover bg-center bg-no-repeat" 
+            className="my-10 bg-fixed py-10 relative bg-cover bg-center bg-no-repeat" 
             style={{ backgroundImage: `url(${featuredImg})` }}
         >
             {/* Text Overlay */}
@@ -30,7 +30,7 @@ const Featured = () => {
                         <p className="w-full  md:w-[25rem] lg:w-[30rem] text-justify text-white text-sm  mx-auto md:mx-0">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores necessitatibus optio nulla quasi iusto nihil. Sequi rerum impedit doloribus, numquam sed consequatur nostrum dolor voluptas. Atque error quo hic corporis?
                         </p>
-                        <button className="rounded-xl px-5 py-1 bg-transparent border-b-4 text-white border-amber-500 mt-5 text-sm ">
+                        <button className="rounded-xl btn border-0 hover:bg-transparent hover:border-white px-5 py-1 bg-transparent border-b-4 text-white border-amber-500 mt-5 text-sm ">
                             Read More
                         </button>
                     </div>
